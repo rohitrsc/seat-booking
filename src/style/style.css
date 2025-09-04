@@ -1,0 +1,185 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #9fb348;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.seats-chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #9fb348;
+}
+
+.stadium-booking-box {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #35bf64;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.booking-list {
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.booking-item {
+  background: #44360a5c;
+  ;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.alert-container {
+  display: flex;
+  align-items: center;
+  background-color: #939b21;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.alert-icon {
+  margin-right: 8px;
+}
+
+.theme-toggle-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.theme-toggle-btn:hover {
+  color: #a9ac19;
+}
+
+.seats-chart-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1000px;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.chart-box {
+  width: 60%;
+  height: 40% !important;
+  margin-left: -45px;
+  /* background-color: #30ad9d; */
+  background-color: #44bba1;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border: ridge;
+  border-color: aquamarine;
+
+}
+
+#chart-container {
+  width: 100%;
+  height: 450px;
+
+}
+
+.selected-seats {
+  width: 29%;
+  background-color: #aa9e36;
+  border: ridge;
+  /* border-color: aquamarine; */
+  border-color: #1a221f;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(112, 84, 84, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 300px;
+}
+
+
+.selected-seats h3 {
+  text-align: center;
+  font-size: 16px;
+  color: rgb(203 0 101);
+  margin-bottom: 8px;
+  border-bottom: 2px solid #d41616;
+  padding-bottom: 5px;
+}
+
+.book-seats-btn {
+  position: absolute;
+  top: 62px;
+  left: 50%;
+  right: -22px;
+  transform: translateX(-50%);
+  background-color: #cc2e50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.book-seats-btn:hover {
+  background-color: #d48806;
+}
+
+.selected-seats ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 45px;
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 250px;
+}
+
+.selected-seats .seat-item {
+  display: flex;
+  justify-content: space-between;
+  background: #b92222;
+  padding: 8px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.selected-seats .seat-id {
+  font-weight: bold;
+}
+
+.no-seats {
+  text-align: center;
+  font-size: 14px;
+  color: #c21a1a;
+}
+
+.loading-text {
+  color: rgb(247, 10, 10);
+}
