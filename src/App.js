@@ -4,7 +4,7 @@ import "./style/style.css";
 
 const SeatsChart = lazy(() => import("./components/SeatsChart"));
 
-const App = () => {
+const Apps = () => {
   return (
     <div className="App">
       <Suspense
