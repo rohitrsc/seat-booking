@@ -6,12 +6,12 @@ const usePolling = (chart) => {
   useEffect(() => {
     if (!chart) return;
 
-    const refreshChart = () => {
-      chart.reRender();
-    };
+    // const refreshChart = () => {
+    //   chart.reRender();
+    // };
 
-    refreshChart(); // Initial refresh
-    const interval = setInterval(refreshChart, 5000);
+    // refreshChart(); // Initial refresh
+    // const interval = setInterval(refreshChart, 5000);
 
     return () => clearInterval(interval);
   }, [chart]);

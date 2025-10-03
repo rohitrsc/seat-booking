@@ -7,7 +7,7 @@ const SeatsChart = lazy(() => import("./components/SeatsChart"));
 const Apps = () => {
   return (
     <div className="App">
-      <Suspense
+      {/* <Suspense
         fallback={
           <div className="loading-container">
             <div className="chart-placeholder"></div>
@@ -15,7 +15,7 @@ const Apps = () => {
           </div>
         }
       > <SeatsChart />
-      </Suspense>
+      </Suspense> */}
     </div>
   );
 };
